@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto final</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <p class="logo-nav">LOGO</p>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./destinos.html">Destinos</a></li>
+          <li><a href="./recetas.html">Recetas</a></li>
+          <li><a href="#">Reservas</a></li>
+        </ul>
+      </nav>
+      <input type="text" placeholder="Buscar" class="buscar-nav" />
+    </header>
+    <main>
+      <section class="reservas-principal">
+        <aside class="preferencias">
+          <h2 class="h2-reservas">Seleccione preferencias</h2>
+          <form class="form-preferencias">
+            <div class="div-preferencias">
+              <div class="tres-div">
+                <label for="destino-reservas">Destino</label>
+                <select name="destino-reservas" id="destino-reservas">
+                  <option value="p-del-carmen">Playa del Carmen</option>
+                  <option value="bs-as">Buenos Aires</option>
+                  <option value="peru">Lima</option>
+                </select>
+              </div>
+              <div class="tres-div">
+                <label for="dias-reservas">Días</label>
+                <select name="dias-reservas" id="dias-reservas">
+                  <option value="siete">7</option>
+                </select>
+              </div>
+            </div>
+            <div class="div-preferencias">
+              <div class="tres-div">
+                <label for="partida">Partida</label>
+                <select name="partida" id="partida">
+                  <option value="a">08 / 04 / 2024</option>
+                </select>
+              </div>
+              <div class="tres-div">
+                <label for="regreso">Regreso</label>
+                <select name="regreso" id="regreso">
+                  <option value="a">15 / 04 / 2024</option>
+                </select>
+              </div>
+            </div>
+            <div class="div-preferencias">
+              <div class="tres-div">
+                <label for="hora-partida">Hora de partida</label>
+                <select name="hora-partida" id="hora-partida">
+                  <option value="a">09:45</option>
+                </select>
+              </div>
+              <div class="tres-div">
+                <label for="hora-regreso">Hora de regreso</label>
+                <select name="hora-regreso" id="hora-regreso">
+                  <option value="a">13:45</option>
+                </select>
+              </div>
+            </div>
+            <div class="div-adultos-ninos">
+              <div class="adultos-ninos">
+                <label for="habitaciones">Habitaciones</label>
+                <select name="habitaciones" id="habitaciones">
+                  <option value="una">1</option>
+                </select>
+              </div>
+              <div class="adultos-ninos">
+                <label for="adultos">Adultos</label>
+                <select name="adultos" id="adultos">
+                  <option value="dos">2</option>
+                </select>
+              </div>
+              <div class="adultos-ninos">
+                <label for="ninos">Niños</label>
+                <select name="ninos" id="ninos" 1>
+                  <option value="none">-</option>
+                </select>
+              </div>
+            </div>
+            <div class="div-preferencias">
+              <div class="tres-div">
+                <label for="tipo-cabina">Tipo de cabina</label>
+                <select name="tipo-cabina" id="tipo-cabina">
+                  <option value="economica">Economica</option>
+                  <option value="intermedia">Intermedia</option>
+                  <option value="primera">Primera clase</option>
+                </select>
+              </div>
+            </div>
+            <div class="boton-reservas">
+              <button class="buscar-reservas">Buscar</button>
+            </div>
+          </form>
+        </aside>
+        <div class="paquete-reservas">
+          <h1 class="h1-reservas">Paquete a Playa del Carmen, México</h1>
+          <div class="container">
+            <div class="reserva go-back">
+              <div class="ida">
+                <h2>IDA</h2>
+                <h4>Lun. 8 Abril</h4>
+              </div>
+              <div class="salida">
+                <h2>BS. AS.</h2>
+                <h4>Ezeiza</h4>
+              </div>
+              <div class="arrow">
+                <h2>(flecha)</h2>
+              </div>
+              <div class="llegada">
+                <h2>CDMX</h2>
+                <h4>
+                  Aeropuerto Int. <br />
+                  de CDMX
+                </h4>
+              </div>
+            </div>
+            <div class="reserva cabina">
+              <h3>Cabina económica</h3>
+              <h3>9:45</h3>
+              <h4>sin escala</h4>
+              <h3>19:45</h3>
+            </div>
+            <div class="reserva go-back">
+              <div class="ida">
+                <h2>VUELTA</h2>
+                <h4>Lun. 15 Abril</h4>
+              </div>
+              <div class="salida">
+                <h2>CDMX</h2>
+                <h4>
+                  Aeropuerto Int. <br />
+                  de CDMX
+                </h4>
+              </div>
+              <div class="arrow">
+                <h2>(flecha)</h2>
+              </div>
+              <div class="llegada">
+                <h2>BS. AS.</h2>
+                <h4>Ezeiza</h4>
+              </div>
+            </div>
+            <div class="reserva cabina">
+              <h3>Cabina económica</h3>
+              <h3>13:45</h3>
+              <h4>sin escala</h4>
+              <h3>23:45</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="redes">
+        <img src="../assets/images/telefono.png" alt="logo telefono" />
+        <img src="../assets/images/youtube.png" alt="logo youtube" />
+        <img src="../assets/images/whatsapp.png" alt="logo whatsapp" />
+        <img src="../assets/images/facebook.png" alt="logo facebook" />
+        <img src="../assets/images/instagram.png" alt="logo instagram" />
+      </div>
+      <div class="logo-copy">
+        <p>logo</p>
+        <p>copyright</p>
+      </div>
+      <div class="info-legal">
+        <p>Información legal</p>
+        <p>|</p>
+        <p>Politica de privacidad</p>
+      </div>
+    </footer>
+  </body>
+</html>
