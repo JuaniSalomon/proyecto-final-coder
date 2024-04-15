@@ -1,0 +1,171 @@
+/* RESERVAS */
+
+.reservas-principal {
+  display: flex;
+  flex-direction: row;
+  background-color: #f4f1f1;
+  padding: 20px;
+  gap: 20px;
+}
+
+.preferencias {
+  display: flex;
+  flex-direction: column;
+  background-color: #cccccc;
+  padding: 15px;
+  border-radius: 14px;
+  height: 100%;
+}
+
+.div-preferencias {
+  display: flex;
+  gap: 10px;
+}
+
+.tres-div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 5px;
+
+  label {
+    color: #0c2d57;
+    font-family: "Mulish", sans-serif;
+    font-weight: 100;
+  }
+
+  select {
+    border-radius: 10px;
+    width: 100%;
+    padding: 4px;
+    width: 130px;
+    font-family: "Mulish", sans-serif;
+  }
+}
+
+.div-adultos-ninos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.adultos-ninos {
+  display: flex;
+  gap: 10px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  justify-content: space-between;
+  padding-right: 30px;
+
+  select {
+    border-radius: 10px;
+    width: 65px;
+    padding: 4px;
+    font-weight: bolder;
+    font-family: "Mulish", sans-serif;
+  }
+
+  label {
+    color: #0c2d57;
+    font-family: "Mulish", sans-serif;
+    font-weight: 100;
+  }
+}
+
+.h2-reservas {
+  font-family: "Mulish", sans-serif;
+  color: #0c2d57;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-left: 7px;
+}
+
+.buscar-reservas {
+  color: white;
+  padding: 8px 8px;
+  padding-left: 42px;
+  padding-right: 42px;
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: #fc6736;
+  background-color: #fc6736;
+  width: auto;
+  margin-left: 150px;
+}
+
+.paquete-reservas {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 17px;
+  padding-bottom: 25px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 12px;
+
+  .reserva {
+    display: grid;
+    width: 100%;
+    padding: 10px;
+    grid-template: "ida salida arrow llegada" 1fr/2fr 1fr 1fr 1fr;
+
+    .ida {
+      grid-area: ida;
+    }
+
+    .salida {
+      grid-area: salida;
+    }
+
+    .arrow {
+      grid-area: arrow;
+    }
+
+    .llegada {
+      grid-area: llegada;
+    }
+
+    display: grid;
+    width: 100%;
+    padding: 10px;
+    grid-template: "ida salida arrow llegada" 1fr/2fr 1fr 1fr 1fr;
+  }
+
+  .go-back {
+    background-color: #cccccc;
+    color: #0c2d57;
+    font-family: "Mulish", sans-serif;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+
+    h4 {
+      font-weight: lighter;
+    }
+  }
+
+  .cabina {
+    background-color: #ffffff;
+    color: #0c2d57;
+    font-family: "Mulish", sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+}
+
+.h1-reservas {
+  font-family: "Mulish", sans-serif;
+  font-size: 30px;
+  color: #0c2d57;
+}

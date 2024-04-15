@@ -1,0 +1,52 @@
+/* INDEX */
+
+.seccion-principal {
+  background-image: url("../assets/images/imagen-fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+.h1-index {
+  display: flex;
+  justify-content: center;
+  color: #efecec;
+  padding-top: 40px;
+  font-size: 120px;
+  text-align: center;
+  font-family: "Meow Script";
+  font-weight: 150;
+}
+
+.fotos-body {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    figure {
+      figcaption {
+        color: #efecec;
+        font-family: "Mulish", sans-serif;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      img {
+        width: 140px;
+        height: 150px;
+      }
+    }
+  }
+}

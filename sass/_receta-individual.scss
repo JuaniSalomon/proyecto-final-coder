@@ -1,0 +1,104 @@
+/* RECETA INDIVIDUAL */
+
+.receta-individual {
+  display: flex;
+  flex-direction: column;
+  background: url("../assets/images/fondo receta.jpg");
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: #0c2d57;
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    padding-top: 0;
+  }
+
+  .seccion-rec-individual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: "Mulish", sans-serif;
+    color: #0c2d57;
+
+    .ingredientes {
+      display: flex;
+      flex-direction: column;
+      padding-left: 50px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+
+      h2 {
+        text-decoration: underline;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      h3 {
+        color: #fc6736;
+        text-decoration: underline;
+        font-style: italic;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      ul li {
+        font-weight: bold;
+      }
+    }
+
+    .procedimiento {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+
+      h2 {
+        text-decoration: underline;
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+
+    .paso1 {
+      display: flex;
+      text-align: start;
+      padding-right: 15px;
+      gap: 5px;
+    }
+
+    .procedimiento {
+      .paso1 {
+        h4 {
+          color: #fc6736;
+          font-size: 40px;
+          font-weight: bold;
+          padding-bottom: 15px;
+        }
+
+        p {
+          font-weight: bold;
+        }
+      }
+
+      h3 {
+        color: #fc6736;
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      button {
+        color: white;
+        padding: 3px 3px;
+        margin: 3px;
+        border-radius: 15px;
+        border: 1px solid;
+        border-color: #fc6736;
+        background-color: #fc6736;
+        width: 95%;
+      }
+    }
+  }
+}

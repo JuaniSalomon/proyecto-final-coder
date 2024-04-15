@@ -1,82 +1,4 @@
-/* Reset */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  border: 0;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: beige;
-  width: 75%;
-  margin: 0 auto;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  background-color: white;
-  justify-content: space-between;
-  padding: 25px;
-}
-
-.buscar-nav {
-  background-color: #0c2d57;
-  color: #f4f1f1;
-  text-align: center;
-  width: 20%;
-  border: 1px solid;
-  border-radius: 12px;
-  background-image: url(../assets/images/lupa.png);
-  background-repeat: no-repeat;
-  background-size: 15px 15px;
-  background-position: 0.2rem center;
-}
-
-.nav-2 {
-  display: none;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-nav ul li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  text-decoration: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #0c2d57;
-  font-family: "Mulish", sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.logo-nav {
-  color: #0c2d57;
-}
-
-.buscar {
-  background-color: #0c2d57;
-  color: #efecec;
-}
-
+/* INDEX */
 .seccion-principal {
   background-image: url("../assets/images/imagen-fondo.jpg");
   background-size: cover;
@@ -106,72 +28,24 @@ nav ul li a {
   justify-content: space-evenly;
   margin-top: 50px;
 }
-
 .fotos-body div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .fotos-body div figure figcaption {
   color: #efecec;
   font-family: "Mulish", sans-serif;
   font-size: 20px;
   text-align: center;
 }
-
 .fotos-body div figure img {
   width: 140px;
   height: 150px;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #0c2d57;
-}
-
-.redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.redes img {
-  width: 25px;
-  height: 25px;
-}
-
-.logo-copy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 5px;
-}
-
-.logo-copy p {
-  color: #efecec;
-  font-family: "Mulish", sans-serif;
-}
-
-.info-legal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 10px;
-  padding-bottom: 20px;
-}
-
-.info-legal p {
-  color: #efecec;
-  font-family: "Mulish", sans-serif;
-  font-weight: bold;
-}
-
+/* DESTINOS */
 .main-destinos {
   display: flex;
   flex-direction: column;
@@ -184,7 +58,6 @@ footer {
   display: inline-block;
   text-align: center;
 }
-
 .tres-fotos img {
   width: 90%;
   height: 200px;
@@ -211,7 +84,6 @@ footer {
   color: #efecec;
   font-size: 55px;
 }
-
 .tres-fotos .texto-jtravel {
   position: absolute;
   top: 50%;
@@ -246,7 +118,6 @@ footer {
   justify-content: space-evenly;
   margin-top: 30px;
 }
-
 .fotos-body-destinos img {
   width: 230px;
   height: 270px;
@@ -274,6 +145,7 @@ footer {
   margin-bottom: 30px;
 }
 
+/* RECETAS */
 .main-recetas {
   display: flex;
   background-color: #f4f1f1;
@@ -284,7 +156,6 @@ footer {
   flex-direction: column;
   width: auto;
 }
-
 .seccion-destacados .dest-cat-dific {
   display: flex;
   flex-direction: column;
@@ -295,11 +166,9 @@ footer {
   padding: 10px;
   height: 100%;
 }
-
 .seccion-destacados .dest-cat-dific h2 {
   color: #fc6736;
 }
-
 .seccion-destacados .dest-cat-dific .buttons1 {
   color: #0c2d57;
   padding: 3px 3px;
@@ -310,7 +179,6 @@ footer {
   background-color: #f4f1f1;
   width: 100%;
 }
-
 .seccion-destacados .dest-cat-dific .buttons2 {
   color: #0c2d57;
   padding: 3px 3px;
@@ -329,7 +197,6 @@ footer {
   flex-grow: 1;
   font-family: "Mulish", sans-serif;
 }
-
 .seccion-body-recetas .filtros-body {
   display: flex;
   flex-direction: row;
@@ -337,7 +204,6 @@ footer {
   padding: 30px;
   justify-content: space-evenly;
 }
-
 .seccion-body-recetas .filtros-body button {
   color: #0c2d57;
   padding: 15px 15px;
@@ -348,7 +214,6 @@ footer {
   background-color: #f4f1f1;
   width: 100%;
 }
-
 .seccion-body-recetas .buscar-recetas {
   color: white;
   padding: 10px 10px;
@@ -360,7 +225,6 @@ footer {
   background-color: #fc6736;
   width: auto;
 }
-
 .seccion-body-recetas .img-recetas {
   display: flex;
   flex-direction: row;
@@ -369,12 +233,10 @@ footer {
   gap: 100px;
   margin-top: 30px;
 }
-
 .seccion-body-recetas .img-recetas img {
   width: 210px;
   height: 270px;
 }
-
 .seccion-body-recetas .filtros-aplicados {
   display: flex;
   flex-direction: row;
@@ -384,24 +246,20 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
-
 .seccion-body-recetas .filtros-aplicados .div1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-
 .seccion-body-recetas .filtros-aplicados .div1 p {
   color: #0c2d57;
   font-weight: bold;
 }
-
 .seccion-body-recetas .filtros-aplicados div {
   display: flex;
   justify-content: start;
   gap: 15px;
 }
-
 .seccion-body-recetas .filtros-aplicados .div1 div button {
   color: #0c2d57;
   padding: 10px 10px;
@@ -413,7 +271,6 @@ footer {
   background-color: #cccccc;
   width: auto;
 }
-
 .seccion-body-recetas .filtros-aplicados .eliminar-filtros {
   display: flex;
   justify-content: end;
@@ -425,12 +282,12 @@ footer {
   text-decoration: underline;
 }
 
+/* RECETA INDIVIDUAL */
 .receta-individual {
   display: flex;
   flex-direction: column;
-  background: url("../assets/images/fondo\ receta.jpg");
+  background: url("../assets/images/fondo receta.jpg");
 }
-
 .receta-individual h1 {
   display: flex;
   justify-content: center;
@@ -440,7 +297,6 @@ footer {
   font-size: 55px;
   padding-top: 0;
 }
-
 .receta-individual .seccion-rec-individual {
   display: flex;
   justify-content: space-between;
@@ -449,7 +305,6 @@ footer {
   font-family: "Mulish", sans-serif;
   color: #0c2d57;
 }
-
 .receta-individual .seccion-rec-individual .ingredientes {
   display: flex;
   flex-direction: column;
@@ -457,13 +312,11 @@ footer {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-
 .receta-individual .seccion-rec-individual .ingredientes h2 {
   text-decoration: underline;
   font-size: 30px;
   font-weight: bold;
 }
-
 .receta-individual .seccion-rec-individual .ingredientes h3 {
   color: #fc6736;
   text-decoration: underline;
@@ -471,48 +324,40 @@ footer {
   font-size: 25px;
   font-weight: bold;
 }
-
 .receta-individual .seccion-rec-individual .ingredientes ul li {
   font-weight: bold;
 }
-
 .receta-individual .seccion-rec-individual .procedimiento {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 14px;
 }
-
 .receta-individual .seccion-rec-individual .procedimiento h2 {
   text-decoration: underline;
   font-size: 30px;
   font-weight: bold;
 }
-
 .receta-individual .seccion-rec-individual .paso1 {
   display: flex;
   text-align: start;
   padding-right: 15px;
   gap: 5px;
 }
-
 .receta-individual .seccion-rec-individual .procedimiento .paso1 h4 {
   color: #fc6736;
   font-size: 40px;
   font-weight: bold;
   padding-bottom: 15px;
 }
-
 .receta-individual .seccion-rec-individual .procedimiento .paso1 p {
   font-weight: bold;
 }
-
 .receta-individual .seccion-rec-individual .procedimiento h3 {
   color: #fc6736;
   font-size: 35px;
   font-weight: bold;
 }
-
 .receta-individual .seccion-rec-individual .procedimiento button {
   color: white;
   padding: 3px 3px;
@@ -524,7 +369,7 @@ footer {
   width: 95%;
 }
 
-/* PARTE DE RESERVAS */
+/* RESERVAS */
 .reservas-principal {
   display: flex;
   flex-direction: row;
@@ -555,13 +400,11 @@ footer {
   padding-bottom: 10px;
   gap: 5px;
 }
-
 .tres-div label {
   color: #0c2d57;
   font-family: "Mulish", sans-serif;
   font-weight: 100;
 }
-
 .tres-div select {
   border-radius: 10px;
   width: 100%;
@@ -586,7 +429,6 @@ footer {
   justify-content: space-between;
   padding-right: 30px;
 }
-
 .adultos-ninos select {
   border-radius: 10px;
   width: 65px;
@@ -594,7 +436,6 @@ footer {
   font-weight: bolder;
   font-family: "Mulish", sans-serif;
 }
-
 .adultos-ninos label {
   color: #0c2d57;
   font-family: "Mulish", sans-serif;
@@ -638,41 +479,28 @@ footer {
   border: 1px solid;
   border-radius: 12px;
 }
-
 .container .reserva {
   display: grid;
   width: 100%;
   padding: 10px;
-  grid-template:
-    "ida salida arrow llegada" 1fr
-    / 2fr 1fr 1fr 1fr;
+  grid-template: "ida salida arrow llegada" 1fr/2fr 1fr 1fr 1fr;
+  display: grid;
+  width: 100%;
+  padding: 10px;
+  grid-template: "ida salida arrow llegada" 1fr/2fr 1fr 1fr 1fr;
 }
-
 .container .reserva .ida {
   grid-area: ida;
 }
-
 .container .reserva .salida {
   grid-area: salida;
 }
-
 .container .reserva .arrow {
   grid-area: arrow;
 }
-
 .container .reserva .llegada {
   grid-area: llegada;
 }
-
-.container .reserva {
-  display: grid;
-  width: 100%;
-  padding: 10px;
-  grid-template:
-    "ida salida arrow llegada" 1fr
-    / 2fr 1fr 1fr 1fr;
-}
-
 .container .go-back {
   background-color: #cccccc;
   color: #0c2d57;
@@ -680,11 +508,9 @@ footer {
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
 }
-
 .container .go-back h4 {
   font-weight: lighter;
 }
-
 .container .cabina {
   background-color: #ffffff;
   color: #0c2d57;
@@ -701,16 +527,15 @@ footer {
   color: #0c2d57;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 1190px) {
   .h1-index {
     font-size: 85px;
   }
-
   .fotos-body div figure img {
     width: 120px;
     height: 130px;
   }
-
   .fotos-body div figure figcaption {
     color: #efecec;
     font-family: "Mulish", sans-serif;
@@ -718,137 +543,109 @@ footer {
     text-align: center;
   }
 }
-
 @media (max-width: 1185px) {
   .h1-destinos {
     font-size: 27px;
   }
-
   .h2-destinos {
     font-size: 17px;
   }
 }
-
 @media (max-width: 1090px) {
   .tres-fotos .texto-reserva {
     font-size: 50px;
   }
-
   .tres-fotos .texto-jtravel {
     font-size: 40px;
   }
 }
-
 @media (max-width: 1005px) {
   .h1-destinos {
     font-size: 24px;
   }
-
   .h2-destinos {
     font-size: 14px;
   }
-
   .tres-fotos .texto-reserva {
     font-size: 45px;
   }
-
   .tres-fotos .texto-jtravel {
     font-size: 35px;
   }
 }
-
 @media (max-width: 995px) {
   .fotos-body-destinos img {
     width: 210px;
     height: 240px;
   }
-
   .tres-fotos img {
     height: 180px;
   }
 }
-
 @media (max-width: 900px) {
   .buscar-nav {
     width: 30px;
   }
-
   .h1-index {
     font-size: 75px;
   }
-
   .fotos-body div figure img {
     width: 100px;
     height: 110px;
   }
-
   .fotos-body div figure figcaption {
     color: #efecec;
     font-family: "Mulish", sans-serif;
     font-size: 14px;
     text-align: center;
   }
-
   .buscar-nav::placeholder {
     visibility: hidden;
   }
-
   .foto-ba {
     display: none;
   }
-
   .h1-destinos {
     font-size: 21px;
   }
-
   .h2-destinos {
     font-size: 13px;
   }
-
   .tres-fotos .texto-reserva {
     font-size: 42px;
   }
-
   .tres-fotos .texto-jtravel {
     font-size: 32px;
   }
 }
-
 @media (max-width: 780px) {
   .h1-destinos {
     font-size: 19px;
   }
-
   .h2-destinos {
     font-size: 11px;
   }
-
   .tres-fotos .texto-reserva {
     font-size: 37px;
   }
-
   .tres-fotos .texto-jtravel {
     font-size: 27px;
   }
 }
-
 @media (max-width: 760px) {
   .h1-index {
     font-size: 60px;
   }
-
   .fotos-body div figure img {
     width: 75px;
     height: 95px;
   }
-
   .fotos-body div figure figcaption {
     color: #efecec;
     font-family: "Mulish", sans-serif;
     font-size: 11px;
     text-align: center;
   }
-
   nav ul li a {
     text-decoration: none;
     color: #0c2d57;
@@ -857,89 +654,188 @@ footer {
     font-weight: 700;
   }
 }
-
 @media (max-width: 705px) {
   .h1-destinos {
     font-size: 16px;
   }
-
   .h2-destinos {
     font-size: 10px;
   }
-
   .tres-fotos .texto-reserva {
     font-size: 34px;
   }
-
   .tres-fotos .texto-jtravel {
     font-size: 24px;
   }
-
   .tres-fotos img {
     height: 160px;
   }
 }
-
 @media (max-width: 600px) {
   .h1-index {
     font-size: 50px;
   }
-
   nav ul li a {
     display: none !important;
   }
-
   .fotos-body div figure img {
     width: 100px;
     height: 120px;
   }
-
   .fotos-body div figure figcaption {
     color: #efecec;
     font-family: "Mulish", sans-serif;
     font-size: 18px;
     text-align: center;
   }
-
-  .mejores-recetas {
-    display: none !important;
-  }
-
+  .mejores-recetas,
   .mejores-reservas {
     display: none !important;
   }
-
   .logo-nav {
     color: #0c2d57;
     font-size: 45px;
   }
-
   .tres-fotos .texto-reserva {
     font-size: 28px;
   }
-
   .tres-fotos .texto-jtravel {
     font-size: 20px;
   }
-
-  .foto-lima {
-    display: none;
-  }
-
+  .foto-lima,
   .h1-destinos {
     display: none;
   }
-
   .h1-destinos-dos {
     display: flex;
     justify-content: space-between;
   }
-
   .h2-destinos {
     display: none;
   }
-
   .h2-destinos-dos {
     display: flex;
   }
 }
+/* Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* NAV BAR */
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.buscar-nav {
+  background-color: #0c2d57;
+  color: #f4f1f1;
+  text-align: center;
+  width: 20%;
+  border: 1px solid;
+  border-radius: 12px;
+  background-image: url(../assets/images/lupa.png);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: 0.2rem center;
+}
+
+.nav-2 {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+nav ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #0c2d57;
+  font-family: "Mulish", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.logo-nav {
+  color: #0c2d57;
+}
+
+.buscar {
+  background-color: #0c2d57;
+  color: #efecec;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #0c2d57;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.redes img {
+  width: 25px;
+  height: 25px;
+}
+
+.logo-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+.logo-copy p {
+  color: #efecec;
+  font-family: "Mulish", sans-serif;
+}
+
+.info-legal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.info-legal p {
+  color: #efecec;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

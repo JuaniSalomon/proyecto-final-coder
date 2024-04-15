@@ -1,0 +1,105 @@
+/* DESTINOS */
+
+.main-destinos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f4f1f1;
+}
+
+.tres-fotos {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+  img {
+    width: 90%;
+    height: 200px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.textos-destinos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.textos-destinos-dos {
+  display: none;
+}
+
+.tres-fotos {
+  .texto-reserva {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    font-family: "Mulish", sans-serif;
+    color: #efecec;
+    font-size: 55px;
+  }
+
+  .texto-jtravel {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-family: "Irish Grover", system-ui;
+    color: #efecec;
+    font-size: 45px;
+    font-size-adjust: inherit;
+  }
+}
+
+.h1-destinos {
+  display: flex;
+  justify-content: center;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #0c2d57;
+}
+
+.h1-destinos-dos {
+  display: none;
+  justify-content: center;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #0c2d57;
+}
+
+.fotos-body-destinos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+
+  img {
+    width: 230px;
+    height: 270px;
+  }
+}
+
+.h2-destinos {
+  display: flex;
+  justify-content: center;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0c2d57;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.h2-destinos-dos {
+  display: none;
+  justify-content: center;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0c2d57;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
