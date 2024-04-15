@@ -1,0 +1,47 @@
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #0c2d57;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.logo-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+
+  p {
+    color: #efecec;
+    font-family: "Mulish", sans-serif;
+  }
+}
+
+.info-legal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding-bottom: 20px;
+
+  p {
+    color: #efecec;
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,16 @@
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  width: 75%;
+  margin: 0 auto;
+}
