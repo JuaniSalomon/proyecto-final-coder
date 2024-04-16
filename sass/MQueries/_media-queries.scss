@@ -1,0 +1,416 @@
+/* MEDIA QUERIES */
+
+@media (max-width: 1190px) {
+  .h1-index {
+    font-size: 85px;
+  }
+
+  .fotos-body div figure {
+    img {
+      width: 120px;
+      height: 130px;
+    }
+
+    figcaption {
+      color: #efecec;
+      font-family: "Mulish", sans-serif;
+      font-size: 17px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1185px) {
+  .h1-destinos {
+    font-size: 27px;
+  }
+
+  .h2-destinos {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .tres-fotos {
+    .texto-reserva {
+      font-size: 50px;
+    }
+
+    .texto-jtravel {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 1005px) {
+  .h1-destinos {
+    font-size: 24px;
+  }
+
+  .h2-destinos {
+    font-size: 14px;
+  }
+
+  .tres-fotos {
+    .texto-reserva {
+      font-size: 45px;
+    }
+
+    .texto-jtravel {
+      font-size: 35px;
+    }
+  }
+}
+
+@media (max-width: 995px) {
+  .fotos-body-destinos img {
+    width: 210px;
+    height: 240px;
+  }
+
+  .tres-fotos img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 900px) {
+  .buscar-nav {
+    width: 30px;
+  }
+
+  .h1-index {
+    font-size: 75px;
+  }
+
+  .fotos-body div figure {
+    img {
+      width: 100px;
+      height: 110px;
+    }
+
+    figcaption {
+      color: #efecec;
+      font-family: "Mulish", sans-serif;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  .buscar-nav::placeholder {
+    visibility: hidden;
+  }
+
+  .foto-ba {
+    display: none;
+  }
+
+  .h1-destinos {
+    font-size: 21px;
+  }
+
+  .h2-destinos {
+    font-size: 13px;
+  }
+
+  .tres-fotos {
+    .texto-reserva {
+      font-size: 42px;
+    }
+
+    .texto-jtravel {
+      font-size: 32px;
+    }
+  }
+
+  .receta-individual {
+    h1 {
+      font-size: 50px;
+    }
+
+    .seccion-rec-individual {
+      display: flex;
+      flex-direction: column;
+
+      .ingredientes {
+        align-self: flex-start;
+
+        gap: 5px;
+
+        h2 {
+          font-size: 30px;
+        }
+
+        .capeado-salsa {
+          display: none;
+        }
+      }
+
+      .procedimiento {
+        align-self: flex-start;
+        padding-left: 50px;
+        padding-bottom: 10px;
+      }
+
+      button {
+        display: none;
+      }
+
+      .paso1 {
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 780px) {
+    .h1-destinos {
+      font-size: 19px;
+    }
+
+    .h2-destinos {
+      font-size: 11px;
+    }
+
+    .tres-fotos {
+      .texto-reserva {
+        font-size: 37px;
+      }
+
+      .texto-jtravel {
+        font-size: 27px;
+      }
+    }
+  }
+
+  @media (max-width: 760px) {
+    .h1-index {
+      font-size: 60px;
+    }
+
+    .fotos-body div figure {
+      img {
+        width: 75px;
+        height: 95px;
+      }
+
+      figcaption {
+        color: #efecec;
+        font-family: "Mulish", sans-serif;
+        font-size: 11px;
+        text-align: center;
+      }
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #0c2d57;
+      font-family: "Mulish", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  @media (max-width: 705px) {
+    .h1-destinos {
+      font-size: 16px;
+    }
+
+    .h2-destinos {
+      font-size: 10px;
+    }
+
+    .tres-fotos {
+      .texto-reserva {
+        font-size: 34px;
+      }
+
+      .texto-jtravel {
+        font-size: 24px;
+      }
+
+      img {
+        height: 160px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .buscar-nav {
+      display: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      nav {
+        display: block;
+        flex-grow: 0;
+
+        input {
+          display: block;
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          margin: 0;
+          opacity: 0;
+          cursor: pointer;
+          z-index: 150;
+
+          &:checked ~ div {
+            &:first-of-type {
+              transform: rotate(-45deg) translate(-4.5px, 4.5px);
+              -webkit-transform: rotate(-45deg) translate(-4.5px, 4.5px);
+            }
+
+            &:nth-of-type(2) {
+              opacity: 0;
+            }
+
+            &:nth-of-type(3) {
+              transform: rotate(45deg) translate(-4.5px, -4.5px);
+              -webkit-transform: rotate(45deg) translate(-4.5px, -4.5px);
+            }
+          }
+
+          &:checked ~ ul {
+            max-height: 200px; // show the navbar items from 0px -> 200px with a transition
+            transition: all 0.5s;
+          }
+        }
+
+        .bar {
+          width: 25px;
+          height: 2.5px;
+          background-color: #0c2d57;
+          margin: 4px 0;
+          transition: 0.4s;
+        }
+
+        ul {
+          position: absolute;
+          top: 100px;
+          left: 0;
+          width: 100%;
+          background-color: #0c2d57;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-left: 15px;
+          max-height: 0;
+          overflow: hidden;
+          z-index: 1;
+
+          li {
+            list-style-type: none;
+            padding-top: 15px;
+
+            &:last-of-type {
+              padding-bottom: 15px;
+            }
+
+            a {
+              color: #efecec;
+              font-family: "Mulish", sans-serif;
+              font-size: 1em;
+              letter-spacing: 0;
+              line-height: 1.75em;
+              text-decoration: none;
+
+              &:hover,
+              &:focus {
+                color: #fabee3;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .h1-index {
+      font-size: 50px;
+    }
+
+    .fotos-body div figure {
+      img {
+        width: 100px;
+        height: 120px;
+      }
+
+      figcaption {
+        color: #efecec;
+        font-family: "Mulish", sans-serif;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+
+    .mejores-recetas,
+    .mejores-reservas {
+      display: none !important;
+    }
+
+    .logo-nav {
+      color: #0c2d57;
+      font-size: 45px;
+    }
+
+    .tres-fotos {
+      .texto-reserva {
+        font-size: 28px;
+      }
+
+      .texto-jtravel {
+        font-size: 20px;
+      }
+    }
+
+    .h1-destinos {
+      display: none;
+    }
+
+    .h1-destinos-dos {
+      display: flex;
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    .h2-destinos {
+      display: none;
+    }
+
+    .h2-destinos-dos {
+      display: flex;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .fotos-body-destinos {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      img {
+        align-self: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 400px;
+        width: 350px;
+      }
+
+      .foto-ba {
+        display: flex;
+      }
+    }
+  }
+
+  .receta-individual {
+    h1 {
+      font-size: 34px;
+    }
+  }
+}

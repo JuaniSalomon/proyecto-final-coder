@@ -3,150 +3,150 @@
 .main-recetas {
   display: flex;
   background-color: #f4f1f1;
-}
 
-.seccion-destacados {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-
-  .dest-cat-dific {
+  .seccion-destacados {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-family: "Mulish", sans-serif;
-    margin-left: 10px;
-    padding: 10px;
-    height: 100%;
-
-    h2 {
-      color: #fc6736;
-    }
-
-    .buttons1 {
-      color: #0c2d57;
-      padding: 3px 3px;
-      margin: 3px;
-      border-radius: 14px;
-      border: 1px solid;
-      border-color: #fc6736;
-      background-color: #f4f1f1;
-      width: 100%;
-    }
-
-    .buttons2 {
-      color: #0c2d57;
-      padding: 3px 3px;
-      margin: 3px;
-      border-radius: 14px;
-      border: 1px solid;
-      border-color: #cccccc;
-      background-color: #cccccc;
-      width: 100%;
-    }
-  }
-}
-
-.seccion-body-recetas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
-  font-family: "Mulish", sans-serif;
-
-  .filtros-body {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 30px;
-    justify-content: space-evenly;
-
-    button {
-      color: #0c2d57;
-      padding: 15px 15px;
-      margin: 3px;
-      border-radius: 15px;
-      border: 1px solid;
-      border-color: #0c2d57;
-      background-color: #f4f1f1;
-      width: 100%;
-    }
-  }
-
-  .buscar-recetas {
-    color: white;
-    padding: 10px 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 15px;
-    border: 1px solid;
-    border-color: #fc6736;
-    background-color: #fc6736;
     width: auto;
-  }
 
-  .img-recetas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 100px;
-    margin-top: 30px;
+    .dest-cat-dific {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      font-family: "Mulish", sans-serif;
+      margin-left: 10px;
+      padding: 10px;
+      height: 100%;
 
-    img {
-      width: 210px;
-      height: 270px;
+      h2 {
+        color: #fc6736;
+      }
+
+      .buttons1 {
+        color: #0c2d57;
+        padding: 3px 3px;
+        margin: 3px;
+        border-radius: 14px;
+        border: 1px solid;
+        border-color: #fc6736;
+        background-color: #f4f1f1;
+        width: 100%;
+      }
+
+      .buttons2 {
+        color: #0c2d57;
+        padding: 3px 3px;
+        margin: 3px;
+        border-radius: 14px;
+        border: 1px solid;
+        border-color: #cccccc;
+        background-color: #cccccc;
+        width: 100%;
+      }
     }
   }
 
-  .filtros-aplicados {
+  .seccion-body-recetas {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    font-family: "Mulish", sans-serif;
-    margin: 20px;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
+    flex-grow: 1;
+    font-family: "Mulish", sans-serif;
 
-    .div1 {
+    .filtros-body {
       display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 30px;
       justify-content: space-evenly;
-      align-items: center;
 
-      p {
+      button {
         color: #0c2d57;
-        font-weight: bold;
+        padding: 15px 15px;
+        margin: 3px;
+        border-radius: 15px;
+        border: 1px solid;
+        border-color: #0c2d57;
+        background-color: #f4f1f1;
+        width: 100%;
       }
     }
 
-    div {
-      display: flex;
-      justify-content: start;
-      gap: 15px;
-    }
-
-    .div1 div button {
-      color: #0c2d57;
+    .buscar-recetas {
+      color: white;
       padding: 10px 10px;
       padding-left: 40px;
       padding-right: 40px;
-      border-radius: 14px;
+      border-radius: 15px;
       border: 1px solid;
-      border-color: #cccccc;
-      background-color: #cccccc;
+      border-color: #fc6736;
+      background-color: #fc6736;
       width: auto;
     }
 
-    .eliminar-filtros {
+    .img-recetas {
       display: flex;
-      justify-content: end;
-      padding-left: 300px;
-      color: #0c2d57;
-      border: none;
-      background-color: #f4f1f1;
-      font-weight: bold;
-      text-decoration: underline;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 100px;
+      margin-top: 30px;
+
+      img {
+        width: 210px;
+        height: 270px;
+      }
+    }
+
+    .filtros-aplicados {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      font-family: "Mulish", sans-serif;
+      margin: 20px;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .div1 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        p {
+          color: #0c2d57;
+          font-weight: bold;
+        }
+      }
+
+      div {
+        display: flex;
+        justify-content: start;
+        gap: 15px;
+      }
+
+      .div1 div button {
+        color: #0c2d57;
+        padding: 10px 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 14px;
+        border: 1px solid;
+        border-color: #cccccc;
+        background-color: #cccccc;
+        width: auto;
+      }
+
+      .eliminar-filtros {
+        display: flex;
+        justify-content: end;
+        padding-left: 300px;
+        color: #0c2d57;
+        border: none;
+        background-color: #f4f1f1;
+        font-weight: bold;
+        text-decoration: underline;
+      }
     }
   }
 }

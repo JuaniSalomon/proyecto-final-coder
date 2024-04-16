@@ -1,6 +1,9 @@
-@import "_index.scss";
-@import "_destinos.scss";
-@import "_recetas.scss";
-@import "_receta-individual.scss";
-@import "_reservas.scss";
-@import "_media-queries.scss";
+@import "./base/reset";
+@import "./base/footer";
+@import "./layouts/header";
+@import "./index";
+@import "./destinos";
+@import "./recetas";
+@import "./receta-individual";
+@import "./reservas";
+@import "./MQueries/media-queries";

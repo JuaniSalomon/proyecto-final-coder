@@ -1,0 +1,68 @@
+/* NAV BAR */
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+  padding: 25px;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-evenly;
+      list-style: none;
+
+      li {
+        justify-content: space-evenly;
+        text-decoration: none;
+
+        a {
+          text-decoration: none;
+          color: #0c2d57;
+          font-family: "Mulish", sans-serif;
+          font-size: 25px;
+          font-weight: 700;
+
+          &:hover {
+            text-decoration: underline;
+            font-style: italic;
+          }
+        }
+      }
+    }
+
+    input {
+      display: none;
+    }
+  }
+
+  .buscar-nav {
+    background-color: #0c2d57;
+    color: #f4f1f1;
+    text-align: center;
+    width: 20%;
+    border: 1px solid;
+    border-radius: 12px;
+    background-image: url(../assets/images/lupa.png);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 0.2rem center;
+  }
+
+  .logo-nav {
+    color: #0c2d57;
+  }
+
+  .buscar {
+    background-color: #0c2d57;
+    color: #efecec;
+  }
+}

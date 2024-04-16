@@ -1,3 +1,122 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #0c2d57;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.redes img {
+  width: 25px;
+  height: 25px;
+}
+
+.logo-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+.logo-copy p {
+  color: #efecec;
+  font-family: "Mulish", sans-serif;
+}
+
+.info-legal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.info-legal p {
+  color: #efecec;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+}
+
+/* NAV BAR */
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+  padding: 25px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  list-style: none;
+}
+header nav ul li {
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #0c2d57;
+  font-family: "Mulish", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+header nav input {
+  display: none;
+}
+header .buscar-nav {
+  background-color: #0c2d57;
+  color: #f4f1f1;
+  text-align: center;
+  width: 20%;
+  border: 1px solid;
+  border-radius: 12px;
+  background-image: url(../assets/images/lupa.png);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: 0.2rem center;
+}
+header .logo-nav {
+  color: #0c2d57;
+}
+header .buscar {
+  background-color: #0c2d57;
+  color: #efecec;
+}
+
 /* INDEX */
 .seccion-principal {
   background-image: url("../assets/images/imagen-fondo.jpg");
@@ -39,6 +158,7 @@
   font-family: "Mulish", sans-serif;
   font-size: 20px;
   text-align: center;
+  text-decoration: none;
 }
 .fotos-body div figure img {
   width: 140px;
@@ -122,6 +242,10 @@
   width: 230px;
   height: 270px;
 }
+.fotos-body-destinos .foto-pcarmen:hover {
+  width: 270px;
+  height: 310px;
+}
 
 .h2-destinos {
   display: flex;
@@ -150,13 +274,12 @@
   display: flex;
   background-color: #f4f1f1;
 }
-
-.seccion-destacados {
+.main-recetas .seccion-destacados {
   display: flex;
   flex-direction: column;
   width: auto;
 }
-.seccion-destacados .dest-cat-dific {
+.main-recetas .seccion-destacados .dest-cat-dific {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -166,10 +289,10 @@
   padding: 10px;
   height: 100%;
 }
-.seccion-destacados .dest-cat-dific h2 {
+.main-recetas .seccion-destacados .dest-cat-dific h2 {
   color: #fc6736;
 }
-.seccion-destacados .dest-cat-dific .buttons1 {
+.main-recetas .seccion-destacados .dest-cat-dific .buttons1 {
   color: #0c2d57;
   padding: 3px 3px;
   margin: 3px;
@@ -179,7 +302,7 @@
   background-color: #f4f1f1;
   width: 100%;
 }
-.seccion-destacados .dest-cat-dific .buttons2 {
+.main-recetas .seccion-destacados .dest-cat-dific .buttons2 {
   color: #0c2d57;
   padding: 3px 3px;
   margin: 3px;
@@ -189,22 +312,21 @@
   background-color: #cccccc;
   width: 100%;
 }
-
-.seccion-body-recetas {
+.main-recetas .seccion-body-recetas {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
   font-family: "Mulish", sans-serif;
 }
-.seccion-body-recetas .filtros-body {
+.main-recetas .seccion-body-recetas .filtros-body {
   display: flex;
   flex-direction: row;
   width: 100%;
   padding: 30px;
   justify-content: space-evenly;
 }
-.seccion-body-recetas .filtros-body button {
+.main-recetas .seccion-body-recetas .filtros-body button {
   color: #0c2d57;
   padding: 15px 15px;
   margin: 3px;
@@ -214,7 +336,7 @@
   background-color: #f4f1f1;
   width: 100%;
 }
-.seccion-body-recetas .buscar-recetas {
+.main-recetas .seccion-body-recetas .buscar-recetas {
   color: white;
   padding: 10px 10px;
   padding-left: 40px;
@@ -225,7 +347,7 @@
   background-color: #fc6736;
   width: auto;
 }
-.seccion-body-recetas .img-recetas {
+.main-recetas .seccion-body-recetas .img-recetas {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -233,11 +355,11 @@
   gap: 100px;
   margin-top: 30px;
 }
-.seccion-body-recetas .img-recetas img {
+.main-recetas .seccion-body-recetas .img-recetas img {
   width: 210px;
   height: 270px;
 }
-.seccion-body-recetas .filtros-aplicados {
+.main-recetas .seccion-body-recetas .filtros-aplicados {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -246,21 +368,21 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.seccion-body-recetas .filtros-aplicados .div1 {
+.main-recetas .seccion-body-recetas .filtros-aplicados .div1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.seccion-body-recetas .filtros-aplicados .div1 p {
+.main-recetas .seccion-body-recetas .filtros-aplicados .div1 p {
   color: #0c2d57;
   font-weight: bold;
 }
-.seccion-body-recetas .filtros-aplicados div {
+.main-recetas .seccion-body-recetas .filtros-aplicados div {
   display: flex;
   justify-content: start;
   gap: 15px;
 }
-.seccion-body-recetas .filtros-aplicados .div1 div button {
+.main-recetas .seccion-body-recetas .filtros-aplicados .div1 div button {
   color: #0c2d57;
   padding: 10px 10px;
   padding-left: 40px;
@@ -271,7 +393,7 @@
   background-color: #cccccc;
   width: auto;
 }
-.seccion-body-recetas .filtros-aplicados .eliminar-filtros {
+.main-recetas .seccion-body-recetas .filtros-aplicados .eliminar-filtros {
   display: flex;
   justify-content: end;
   padding-left: 300px;
@@ -324,6 +446,10 @@
   font-size: 25px;
   font-weight: bold;
 }
+.receta-individual .seccion-rec-individual .ingredientes h3:hover {
+  color: #0c2d57;
+  cursor: pointer;
+}
 .receta-individual .seccion-rec-individual .ingredientes ul li {
   font-weight: bold;
 }
@@ -333,30 +459,35 @@
   justify-content: space-between;
   gap: 14px;
 }
-.receta-individual .seccion-rec-individual .procedimiento h2 {
-  text-decoration: underline;
-  font-size: 30px;
-  font-weight: bold;
+.receta-individual .seccion-rec-individual .procedimiento .signos {
+  padding-left: 300px;
 }
-.receta-individual .seccion-rec-individual .paso1 {
+.receta-individual .seccion-rec-individual .procedimiento .paso1 {
   display: flex;
   text-align: start;
   padding-right: 15px;
   gap: 5px;
 }
-.receta-individual .seccion-rec-individual .procedimiento .paso1 h4 {
-  color: #fc6736;
-  font-size: 40px;
-  font-weight: bold;
-  padding-bottom: 15px;
-}
 .receta-individual .seccion-rec-individual .procedimiento .paso1 p {
+  font-weight: bold;
+}
+.receta-individual .seccion-rec-individual .procedimiento .paso1 p::first-letter {
+  color: #fc6736;
+  font-size: 30px;
+}
+.receta-individual .seccion-rec-individual .procedimiento h2 {
+  text-decoration: underline;
+  font-size: 30px;
   font-weight: bold;
 }
 .receta-individual .seccion-rec-individual .procedimiento h3 {
   color: #fc6736;
   font-size: 35px;
   font-weight: bold;
+}
+.receta-individual .seccion-rec-individual .procedimiento h3:hover {
+  color: #0c2d57;
+  cursor: pointer;
 }
 .receta-individual .seccion-rec-individual .procedimiento button {
   color: white;
@@ -367,6 +498,10 @@
   border-color: #fc6736;
   background-color: #fc6736;
   width: 95%;
+}
+.receta-individual .seccion-rec-individual .procedimiento button:hover {
+  background-color: #0c2d57;
+  cursor: pointer;
 }
 
 /* RESERVAS */
@@ -617,8 +752,36 @@
   .tres-fotos .texto-jtravel {
     font-size: 32px;
   }
+  .receta-individual h1 {
+    font-size: 50px;
+  }
+  .receta-individual .seccion-rec-individual {
+    display: flex;
+    flex-direction: column;
+  }
+  .receta-individual .seccion-rec-individual .ingredientes {
+    align-self: flex-start;
+    gap: 5px;
+  }
+  .receta-individual .seccion-rec-individual .ingredientes h2 {
+    font-size: 30px;
+  }
+  .receta-individual .seccion-rec-individual .ingredientes .capeado-salsa {
+    display: none;
+  }
+  .receta-individual .seccion-rec-individual .procedimiento {
+    align-self: flex-start;
+    padding-left: 50px;
+    padding-bottom: 10px;
+  }
+  .receta-individual .seccion-rec-individual button {
+    display: none;
+  }
+  .receta-individual .seccion-rec-individual .paso1 p {
+    display: none;
+  }
 }
-@media (max-width: 780px) {
+@media (max-width: 900px) and (max-width: 780px) {
   .h1-destinos {
     font-size: 19px;
   }
@@ -632,7 +795,7 @@
     font-size: 27px;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 900px) and (max-width: 760px) {
   .h1-index {
     font-size: 60px;
   }
@@ -654,7 +817,7 @@
     font-weight: 700;
   }
 }
-@media (max-width: 705px) {
+@media (max-width: 900px) and (max-width: 705px) {
   .h1-destinos {
     font-size: 16px;
   }
@@ -671,12 +834,86 @@
     height: 160px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) and (max-width: 600px) {
+  .buscar-nav {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    display: block;
+    flex-grow: 0;
+  }
+  header nav input {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 150;
+  }
+  header nav input:checked ~ div:first-of-type {
+    transform: rotate(-45deg) translate(-4.5px, 4.5px);
+    -webkit-transform: rotate(-45deg) translate(-4.5px, 4.5px);
+  }
+  header nav input:checked ~ div:nth-of-type(2) {
+    opacity: 0;
+  }
+  header nav input:checked ~ div:nth-of-type(3) {
+    transform: rotate(45deg) translate(-4.5px, -4.5px);
+    -webkit-transform: rotate(45deg) translate(-4.5px, -4.5px);
+  }
+  header nav input:checked ~ ul {
+    max-height: 200px;
+    transition: all 0.5s;
+  }
+  header nav .bar {
+    width: 25px;
+    height: 2.5px;
+    background-color: #0c2d57;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  header nav ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #0c2d57;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 1;
+  }
+  header nav ul li {
+    list-style-type: none;
+    padding-top: 15px;
+  }
+  header nav ul li:last-of-type {
+    padding-bottom: 15px;
+  }
+  header nav ul li a {
+    color: #efecec;
+    font-family: "Mulish", sans-serif;
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 1.75em;
+    text-decoration: none;
+  }
+  header nav ul li a:hover, header nav ul li a:focus {
+    color: #fabee3;
+    text-decoration: underline;
+  }
   .h1-index {
     font-size: 50px;
-  }
-  nav ul li a {
-    display: none !important;
   }
   .fotos-body div figure img {
     width: 100px;
@@ -702,19 +939,42 @@
   .tres-fotos .texto-jtravel {
     font-size: 20px;
   }
-  .foto-lima,
   .h1-destinos {
     display: none;
   }
   .h1-destinos-dos {
     display: flex;
-    justify-content: space-between;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
   }
   .h2-destinos {
     display: none;
   }
   .h2-destinos-dos {
     display: flex;
+    text-align: center;
+    font-size: 16px;
+  }
+  .fotos-body-destinos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .fotos-body-destinos img {
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 400px;
+    width: 350px;
+  }
+  .fotos-body-destinos .foto-ba {
+    display: flex;
+  }
+}
+@media (max-width: 900px) {
+  .receta-individual h1 {
+    font-size: 34px;
   }
 }
 

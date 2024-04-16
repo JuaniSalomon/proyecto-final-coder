@@ -80,6 +80,13 @@
     width: 230px;
     height: 270px;
   }
+
+  .foto-pcarmen {
+    &:hover {
+      width: 270px;
+      height: 310px;
+    }
+  }
 }
 
 .h2-destinos {
