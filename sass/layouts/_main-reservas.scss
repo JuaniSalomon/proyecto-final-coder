@@ -32,7 +32,7 @@
 
   label {
     color: #0c2d57;
-    font-family: "Mulish", sans-serif;
+    font-family: $font-family;
     font-weight: 100;
   }
 
@@ -41,7 +41,7 @@
     width: 100%;
     padding: 4px;
     width: 130px;
-    font-family: "Mulish", sans-serif;
+    font-family: $font-family;
   }
 }
 
@@ -66,18 +66,18 @@
     width: 65px;
     padding: 4px;
     font-weight: bolder;
-    font-family: "Mulish", sans-serif;
+    font-family: $font-family;
   }
 
   label {
     color: #0c2d57;
-    font-family: "Mulish", sans-serif;
+    font-family: $font-family;
     font-weight: 100;
   }
 }
 
 .h2-reservas {
-  font-family: "Mulish", sans-serif;
+  font-family: $font-family;
   color: #0c2d57;
   font-weight: bolder;
   font-size: 20px;
@@ -85,15 +85,7 @@
 }
 
 .buscar-reservas {
-  color: white;
-  padding: 8px 8px;
-  padding-left: 42px;
-  padding-right: 42px;
-  border-radius: 12px;
-  border: 1px solid;
-  border-color: #fc6736;
-  background-color: #fc6736;
-  width: auto;
+  @include orange-button;
   margin-left: 150px;
 }
 
@@ -144,7 +136,7 @@
   .go-back {
     background-color: #cccccc;
     color: #0c2d57;
-    font-family: "Mulish", sans-serif;
+    font-family: $font-family;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
 
@@ -156,7 +148,7 @@
   .cabina {
     background-color: #ffffff;
     color: #0c2d57;
-    font-family: "Mulish", sans-serif;
+    font-family: $font-family;
     padding-top: 30px;
     padding-bottom: 30px;
     border-bottom-left-radius: 12px;
@@ -165,7 +157,7 @@
 }
 
 .h1-reservas {
-  font-family: "Mulish", sans-serif;
+  font-family: $font-family;
   font-size: 30px;
   color: #0c2d57;
 }

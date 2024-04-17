@@ -1,0 +1,11 @@
+@mixin orange-button {
+  color: white;
+  padding: 10px 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: $naranja;
+  background-color: $naranja;
+  width: auto;
+}

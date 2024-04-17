@@ -2,7 +2,7 @@
 
 .main-recetas {
   display: flex;
-  background-color: #f4f1f1;
+  background-color: $blanco;
 
   .seccion-destacados {
     display: flex;
@@ -14,34 +14,34 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      font-family: "Mulish", sans-serif;
+      font-family: $font-family;
       margin-left: 10px;
       padding: 10px;
       height: 100%;
 
       h2 {
-        color: #fc6736;
+        color: $naranja;
       }
 
       .buttons1 {
-        color: #0c2d57;
+        color: $azul;
         padding: 3px 3px;
         margin: 3px;
         border-radius: 14px;
         border: 1px solid;
-        border-color: #fc6736;
-        background-color: #f4f1f1;
+        border-color: $naranja;
+        background-color: $blanco;
         width: 100%;
       }
 
       .buttons2 {
-        color: #0c2d57;
+        color: $azul;
         padding: 3px 3px;
         margin: 3px;
         border-radius: 14px;
         border: 1px solid;
-        border-color: #cccccc;
-        background-color: #cccccc;
+        border-color: $gris;
+        background-color: $gris;
         width: 100%;
       }
     }
@@ -52,7 +52,7 @@
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
-    font-family: "Mulish", sans-serif;
+    font-family: $font-family;
 
     .filtros-body {
       display: flex;
@@ -62,27 +62,19 @@
       justify-content: space-evenly;
 
       button {
-        color: #0c2d57;
+        color: $azul;
         padding: 15px 15px;
         margin: 3px;
         border-radius: 15px;
         border: 1px solid;
-        border-color: #0c2d57;
-        background-color: #f4f1f1;
+        border-color: $azul;
+        background-color: $blanco;
         width: 100%;
       }
     }
 
     .buscar-recetas {
-      color: white;
-      padding: 10px 10px;
-      padding-left: 40px;
-      padding-right: 40px;
-      border-radius: 15px;
-      border: 1px solid;
-      border-color: #fc6736;
-      background-color: #fc6736;
-      width: auto;
+      @include orange-button;
     }
 
     .img-recetas {
@@ -103,7 +95,7 @@
       display: flex;
       flex-direction: row;
       width: 100%;
-      font-family: "Mulish", sans-serif;
+      font-family: $font-family;
       margin: 20px;
       justify-content: space-evenly;
       align-items: center;
@@ -114,7 +106,7 @@
         align-items: center;
 
         p {
-          color: #0c2d57;
+          color: $azul;
           font-weight: bold;
         }
       }
@@ -126,14 +118,14 @@
       }
 
       .div1 div button {
-        color: #0c2d57;
+        color: $azul;
         padding: 10px 10px;
         padding-left: 40px;
         padding-right: 40px;
         border-radius: 14px;
         border: 1px solid;
-        border-color: #cccccc;
-        background-color: #cccccc;
+        border-color: $gris;
+        background-color: $gris;
         width: auto;
       }
 
@@ -141,9 +133,9 @@
         display: flex;
         justify-content: end;
         padding-left: 300px;
-        color: #0c2d57;
+        color: $azul;
         border: none;
-        background-color: #f4f1f1;
+        background-color: $blanco;
         font-weight: bold;
         text-decoration: underline;
       }

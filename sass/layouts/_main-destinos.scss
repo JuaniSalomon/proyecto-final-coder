@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #f4f1f1;
+  background-color: $blanco;
 }
 
 .tres-fotos {
@@ -36,8 +36,8 @@
     top: 50%;
     left: 22%;
     transform: translate(-50%, -50%);
-    font-family: "Mulish", sans-serif;
-    color: #efecec;
+    font-family: $font-family;
+    color: $blanco;
     font-size: 55px;
   }
 
@@ -47,7 +47,7 @@
     left: 80%;
     transform: translate(-50%, -50%);
     font-family: "Irish Grover", system-ui;
-    color: #efecec;
+    color: $blanco;
     font-size: 45px;
     font-size-adjust: inherit;
   }
@@ -56,7 +56,7 @@
 .h1-destinos {
   display: flex;
   justify-content: center;
-  font-family: "Mulish", sans-serif;
+  font-family: $font-family;
   font-weight: 700;
   font-size: 30px;
   color: #0c2d57;
@@ -65,7 +65,7 @@
 .h1-destinos-dos {
   display: none;
   justify-content: center;
-  font-family: "Mulish", sans-serif;
+  font-family: $font-family;
   font-weight: 700;
   font-size: 30px;
   color: #0c2d57;
@@ -92,7 +92,7 @@
 .h2-destinos {
   display: flex;
   justify-content: center;
-  font-family: "Mulish", sans-serif;
+  font-family: $font-family;
   font-weight: 700;
   font-size: 20px;
   color: #0c2d57;
@@ -103,7 +103,7 @@
 .h2-destinos-dos {
   display: none;
   justify-content: center;
-  font-family: "Mulish", sans-serif;
+  font-family: $font-family;
   font-weight: 700;
   font-size: 20px;
   color: #0c2d57;
