@@ -14,14 +14,21 @@ body {
   margin: 0 auto;
 }
 
+.custom-card {
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.86);
+  -webkit-box-shadow: 10px 10px 10x 1px rgba(0, 0, 0, 0.86);
+  -moz-box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.86);
+}
+
 /* NAV BAR */
 header {
   display: flex;
   flex-direction: row;
+  text-align: center;
   width: 100%;
   background-color: white;
   justify-content: space-between;
-  padding: 25px;
+  padding-right: 15px;
 }
 header nav {
   display: flex;
@@ -34,6 +41,7 @@ header nav ul {
   width: 100%;
   justify-content: space-evenly;
   list-style: none;
+  align-items: center;
 }
 header nav ul li {
   justify-content: space-evenly;
@@ -47,8 +55,7 @@ header nav ul li a {
   font-weight: 700;
 }
 header nav ul li a:hover {
-  border: 3px solid #0c2d57;
-  border-radius: 3px;
+  border-bottom: 3px solid #0c2d57;
 }
 header nav input {
   display: none;
@@ -57,16 +64,23 @@ header .buscar-nav {
   background-color: #0c2d57;
   color: #f4f1f1;
   text-align: center;
+  align-self: center;
   width: 20%;
+  height: 40px;
   border: 1px solid;
   border-radius: 12px;
   background-image: url(../assets/images/lupa.png);
   background-repeat: no-repeat;
   background-size: 15px 15px;
-  background-position: 0.2rem center;
+  background-position: 0.5rem center;
 }
 header .logo-nav {
-  color: #0c2d57;
+  display: block;
+  padding-left: 10px;
+}
+header .logo-nav img {
+  width: 100px;
+  height: 100px;
 }
 header .buscar {
   background-color: #0c2d57;
@@ -97,7 +111,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5px;
+  margin: 10px;
 }
 .logo-copy p {
   color: #efecec;
@@ -110,6 +124,7 @@ footer {
   justify-content: space-evenly;
   margin-top: 10px;
   padding-bottom: 20px;
+  padding-left: 35px;
 }
 .info-legal p {
   color: #efecec;
@@ -296,27 +311,39 @@ footer {
   color: #0c2d57;
   padding: 3px 3px;
   margin: 3px;
+  height: 35px;
   border-radius: 14px;
   border: 1px solid;
   border-color: #fc6736;
   background-color: #f4f1f1;
   width: 100%;
 }
+.main-recetas .seccion-destacados .dest-cat-dific .buttons1:hover {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  cursor: pointer;
+}
 .main-recetas .seccion-destacados .dest-cat-dific .buttons2 {
   color: #0c2d57;
   padding: 3px 3px;
   margin: 3px;
+  height: 35px;
   border-radius: 14px;
   border: 1px solid;
   border-color: #cccccc;
   background-color: #cccccc;
   width: 100%;
 }
+.main-recetas .seccion-destacados .dest-cat-dific .buttons2:hover {
+  background-color: #f4f1f1;
+  border-color: #fc6736;
+  cursor: pointer;
+}
 .main-recetas .seccion-body-recetas {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1;
+  width: 100%;
   font-family: "Mulish", sans-serif;
 }
 .main-recetas .seccion-body-recetas .filtros-body {
@@ -330,11 +357,50 @@ footer {
   color: #0c2d57;
   padding: 15px 15px;
   margin: 3px;
-  border-radius: 15px;
+  border-radius: 14px;
   border: 1px solid;
   border-color: #0c2d57;
   background-color: #f4f1f1;
   width: 100%;
+}
+.main-recetas .seccion-body-recetas .filtros-body button:hover {
+  color: #f4f1f1;
+  background-color: #0c2d57;
+  border-color: #0c2d57;
+  cursor: pointer;
+}
+.main-recetas .seccion-body-recetas .filtros-body2 {
+  display: none;
+}
+.main-recetas .seccion-body-recetas .filtros-body2 .buscar-recetas2 {
+  color: white;
+  padding: 10px 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #fc6736;
+  background-color: #fc6736;
+  width: auto;
+}
+.main-recetas .seccion-body-recetas .filtros-body2 .buscar-recetas2:hover {
+  cursor: pointer;
+}
+.main-recetas .seccion-body-recetas .filtros-body2 .filtrar {
+  color: #0c2d57;
+  padding: 15px 15px;
+  margin: 3px;
+  border-radius: 14px;
+  border: 1px solid;
+  border-color: #0c2d57;
+  background-color: #f4f1f1;
+  width: 100%;
+}
+.main-recetas .seccion-body-recetas .filtros-body2 .filtrar:hover {
+  color: #f4f1f1;
+  background-color: #0c2d57;
+  border-color: #0c2d57;
+  cursor: pointer;
 }
 .main-recetas .seccion-body-recetas .buscar-recetas {
   color: white;
@@ -347,42 +413,37 @@ footer {
   background-color: #fc6736;
   width: auto;
 }
+.main-recetas .seccion-body-recetas .buscar-recetas:hover {
+  cursor: pointer;
+}
 .main-recetas .seccion-body-recetas .img-recetas {
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-evenly;
-  align-items: center;
-  gap: 100px;
   margin-top: 30px;
 }
 .main-recetas .seccion-body-recetas .img-recetas img {
-  width: 210px;
-  height: 270px;
+  width: 250px;
+  height: 300px;
 }
 .main-recetas .seccion-body-recetas .filtros-aplicados {
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  justify-content: space-between;
+  width: 90%;
   font-family: "Mulish", sans-serif;
   margin: 20px;
-  justify-content: space-evenly;
   align-items: center;
 }
-.main-recetas .seccion-body-recetas .filtros-aplicados .div1 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.main-recetas .seccion-body-recetas .filtros-aplicados .div1 p {
+.main-recetas .seccion-body-recetas .filtros-aplicados p {
   color: #0c2d57;
   font-weight: bold;
 }
 .main-recetas .seccion-body-recetas .filtros-aplicados div {
   display: flex;
-  justify-content: start;
   gap: 15px;
 }
-.main-recetas .seccion-body-recetas .filtros-aplicados .div1 div button {
+.main-recetas .seccion-body-recetas .filtros-aplicados div button {
   color: #0c2d57;
   padding: 10px 10px;
   padding-left: 40px;
@@ -391,17 +452,17 @@ footer {
   border: 1px solid;
   border-color: #cccccc;
   background-color: #cccccc;
-  width: auto;
+  width: 100%;
 }
 .main-recetas .seccion-body-recetas .filtros-aplicados .eliminar-filtros {
-  display: flex;
-  justify-content: end;
-  padding-left: 300px;
   color: #0c2d57;
   border: none;
   background-color: #f4f1f1;
   font-weight: bold;
   text-decoration: underline;
+}
+.main-recetas .seccion-body-recetas .filtros-aplicados .eliminar-filtros:hover {
+  cursor: pointer;
 }
 
 /* RECETA INDIVIDUAL */
@@ -548,6 +609,10 @@ footer {
   font-family: "Mulish", sans-serif;
 }
 
+.separador p {
+  border: 1px solid #0c2d57;
+}
+
 .div-adultos-ninos {
   display: flex;
   flex-direction: column;
@@ -632,6 +697,9 @@ footer {
 }
 .container .reserva .arrow {
   grid-area: arrow;
+}
+.container .reserva .arrow img {
+  width: 60px;
 }
 .container .reserva .llegada {
   grid-area: llegada;
@@ -780,8 +848,25 @@ footer {
   .receta-individual .seccion-rec-individual .paso1 p {
     display: none;
   }
+  .img-recetas .arepas {
+    display: none;
+  }
+  .paquete-reservas .h1-reservas {
+    font-size: 22px;
+  }
+  .paquete-reservas .container h2 {
+    font-size: 20px;
+  }
+  .paquete-reservas .container h4 {
+    font-size: 11px;
+  }
+  .paquete-reservas .container .arrow img {
+    width: 55px;
+    height: 45px;
+    padding-left: 12px;
+  }
 }
-@media (max-width: 900px) and (max-width: 780px) {
+@media (max-width: 780px) {
   .h1-destinos {
     font-size: 19px;
   }
@@ -795,7 +880,7 @@ footer {
     font-size: 27px;
   }
 }
-@media (max-width: 900px) and (max-width: 760px) {
+@media (max-width: 760px) {
   .h1-index {
     font-size: 60px;
   }
@@ -816,8 +901,21 @@ footer {
     font-size: 18px;
     font-weight: 700;
   }
+  .filtros-aplicados {
+    flex-direction: column;
+  }
+  .filtros-aplicados div {
+    align-self: flex-start;
+  }
+  .filtros-aplicados .eliminar-filtros {
+    align-self: flex-start;
+  }
+  .reservas-principal {
+    display: flex;
+    flex-direction: column;
+  }
 }
-@media (max-width: 900px) and (max-width: 705px) {
+@media (max-width: 705px) {
   .h1-destinos {
     font-size: 16px;
   }
@@ -833,8 +931,33 @@ footer {
   .tres-fotos img {
     height: 160px;
   }
+  .main-recetas .seccion-destacados {
+    display: none;
+  }
+  .main-recetas .seccion-body-recetas .img-recetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .main-recetas .seccion-body-recetas .img-recetas img {
+    width: 300px;
+    height: 350px;
+  }
+  .main-recetas .seccion-body-recetas .img-recetas .arepas {
+    display: flex;
+  }
+  .main-recetas .filtros-aplicados {
+    padding-top: 10px;
+  }
+  .main-recetas p {
+    padding-right: 75px;
+  }
+  .main-recetas .eliminar-filtros {
+    padding-top: 15px;
+  }
 }
-@media (max-width: 900px) and (max-width: 600px) {
+@media (max-width: 600px) {
   .buscar-nav {
     display: none;
   }
@@ -971,10 +1094,101 @@ footer {
   .fotos-body-destinos .foto-ba {
     display: flex;
   }
-}
-@media (max-width: 900px) {
+  .main-recetas p {
+    padding-right: 25px;
+  }
   .receta-individual h1 {
     font-size: 34px;
+  }
+}
+@media (max-width: 470px) {
+  .main-recetas .seccion-body-recetas .filtros-body {
+    display: none;
+  }
+  .main-recetas .seccion-body-recetas .buscar-recetas {
+    display: none;
+  }
+  .main-recetas .seccion-body-recetas .filtros-body2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .main-destinos .tres-fotos {
+    display: none;
+  }
+  .main-destinos .h1-destinos-dos span {
+    display: none;
+  }
+  .main-destinos .fotos-body-destinos img {
+    height: 250px;
+    width: 200px;
+  }
+  .main-destinos .fotos-body-destinos img .foto-pcarmen:hover {
+    height: 260px;
+    width: 210px;
+  }
+  .main-recetas .seccion-body-recetas .img-recetas img {
+    width: 250px;
+    height: 320px;
+  }
+  .main-recetas .seccion-body-recetas .filtros-aplicados div {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .main-recetas .seccion-body-recetas .filtros-aplicados div p {
+    padding-right: 0;
+  }
+  .main-recetas .seccion-body-recetas .filtros-aplicados .eliminar-filtros {
+    margin: 0 auto;
+  }
+  .receta-individual h1 {
+    font-size: 18px;
+  }
+  .receta-individual .seccion-rec-individual .ingredientes h2 {
+    font-size: 18px;
+  }
+  .receta-individual .seccion-rec-individual .ingredientes h3 {
+    font-size: 18px;
+  }
+  .receta-individual .seccion-rec-individual .procedimiento h2 {
+    font-size: 18px;
+  }
+  .receta-individual .seccion-rec-individual .procedimiento h3 {
+    font-size: 18px;
+  }
+  .receta-individual .seccion-rec-individual .procedimiento .signos {
+    padding-left: 150px;
+  }
+  .paquete-reservas {
+    display: none;
+  }
+  .reservas-principal .preferencias .form-preferencias .div-preferencias {
+    flex-wrap: wrap;
+  }
+  .reservas-principal .preferencias .form-preferencias .div-preferencias .tres-div {
+    width: 100%;
+  }
+  .reservas-principal .preferencias .form-preferencias .div-preferencias .tres-div #destino-reservas,
+  .reservas-principal .preferencias .form-preferencias .div-preferencias .tres-div #dias-reservas,
+  .reservas-principal .preferencias .form-preferencias .div-preferencias .tres-div #partida,
+  .reservas-principal .preferencias .form-preferencias .div-preferencias .tres-div #regreso,
+  .reservas-principal .preferencias .form-preferencias .div-preferencias .tres-div #hora-partida,
+  .reservas-principal .preferencias .form-preferencias .div-preferencias .tres-div #hora-regreso,
+  .reservas-principal .preferencias .form-preferencias .div-preferencias .tres-div #tipo-cabina {
+    width: 100%;
+  }
+  .reservas-principal .buscar-reservas {
+    margin: 0;
+    width: 100%;
+  }
+  footer .info-legal {
+    padding-left: 0;
+  }
+  footer .info-legal p {
+    font-size: small;
   }
 }
 

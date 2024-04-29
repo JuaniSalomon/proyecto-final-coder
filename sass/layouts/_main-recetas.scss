@@ -27,22 +27,36 @@
         color: $azul;
         padding: 3px 3px;
         margin: 3px;
+        height: 35px;
         border-radius: 14px;
         border: 1px solid;
         border-color: $naranja;
         background-color: $blanco;
         width: 100%;
+
+        &:hover {
+          background-color: $gris;
+          border-color: $gris;
+          cursor: pointer;
+        }
       }
 
       .buttons2 {
         color: $azul;
         padding: 3px 3px;
         margin: 3px;
+        height: 35px;
         border-radius: 14px;
         border: 1px solid;
         border-color: $gris;
         background-color: $gris;
         width: 100%;
+
+        &:hover {
+          background-color: $blanco;
+          border-color: $naranja;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -51,7 +65,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1;
+    width: 100%;
     font-family: $font-family;
 
     .filtros-body {
@@ -65,79 +79,112 @@
         color: $azul;
         padding: 15px 15px;
         margin: 3px;
-        border-radius: 15px;
+        border-radius: 14px;
         border: 1px solid;
         border-color: $azul;
         background-color: $blanco;
         width: 100%;
+
+        &:hover {
+          color: $blanco;
+          background-color: $azul;
+          border-color: $azul;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .filtros-body2 {
+      display: none;
+
+      .buscar-recetas2 {
+        @include orange-button;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .filtrar {
+        color: $azul;
+        padding: 15px 15px;
+        margin: 3px;
+        border-radius: 14px;
+        border: 1px solid;
+        border-color: $azul;
+        background-color: $blanco;
+        width: 100%;
+
+        &:hover {
+          color: $blanco;
+          background-color: $azul;
+          border-color: $azul;
+          cursor: pointer;
+        }
       }
     }
 
     .buscar-recetas {
       @include orange-button;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .img-recetas {
       display: flex;
       flex-direction: row;
+      width: 100%;
       justify-content: space-evenly;
-      align-items: center;
-      gap: 100px;
       margin-top: 30px;
 
       img {
-        width: 210px;
-        height: 270px;
+        width: 250px;
+        height: 300px;
       }
     }
 
     .filtros-aplicados {
       display: flex;
-      flex-direction: row;
-      width: 100%;
+      justify-content: space-between;
+      width: 90%;
       font-family: $font-family;
       margin: 20px;
-      justify-content: space-evenly;
       align-items: center;
 
-      .div1 {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-        p {
-          color: $azul;
-          font-weight: bold;
-        }
+      p {
+        color: $azul;
+        font-weight: bold;
       }
 
       div {
         display: flex;
-        justify-content: start;
         gap: 15px;
-      }
 
-      .div1 div button {
-        color: $azul;
-        padding: 10px 10px;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-radius: 14px;
-        border: 1px solid;
-        border-color: $gris;
-        background-color: $gris;
-        width: auto;
+        button {
+          color: $azul;
+          padding: 10px 10px;
+          padding-left: 40px;
+          padding-right: 40px;
+          border-radius: 14px;
+          border: 1px solid;
+          border-color: $gris;
+          background-color: $gris;
+          width: 100%;
+        }
       }
 
       .eliminar-filtros {
-        display: flex;
-        justify-content: end;
-        padding-left: 300px;
         color: $azul;
         border: none;
         background-color: $blanco;
         font-weight: bold;
         text-decoration: underline;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }

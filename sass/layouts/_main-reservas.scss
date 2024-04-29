@@ -45,6 +45,12 @@
   }
 }
 
+.separador {
+  p {
+    border: 1px solid #0c2d57;
+  }
+}
+
 .div-adultos-ninos {
   display: flex;
   flex-direction: column;
@@ -121,6 +127,10 @@
 
     .arrow {
       grid-area: arrow;
+
+      img {
+        width: 60px;
+      }
     }
 
     .llegada {

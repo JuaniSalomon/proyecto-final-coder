@@ -3,10 +3,11 @@
 header {
   display: flex;
   flex-direction: row;
+  text-align: center;
   width: 100%;
   background-color: white;
   justify-content: space-between;
-  padding: 25px;
+  padding-right: 15px;
 
   nav {
     display: flex;
@@ -19,6 +20,7 @@ header {
       width: 100%;
       justify-content: space-evenly;
       list-style: none;
+      align-items: center;
 
       li {
         justify-content: space-evenly;
@@ -32,8 +34,7 @@ header {
           font-weight: 700;
 
           &:hover {
-            border: 3px solid $azul;
-            border-radius: 3px;
+            border-bottom: 3px solid $azul;
           }
         }
       }
@@ -48,17 +49,25 @@ header {
     background-color: map-get($colores, azul);
     color: #f4f1f1;
     text-align: center;
+    align-self: center;
     width: 20%;
+    height: 40px;
     border: 1px solid;
     border-radius: 12px;
     background-image: url(../assets/images/lupa.png);
     background-repeat: no-repeat;
     background-size: 15px 15px;
-    background-position: 0.2rem center;
+    background-position: 0.5rem center;
   }
 
   .logo-nav {
-    color: map-get($colores, azul);
+    display: block;
+    padding-left: 10px;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   .buscar {
